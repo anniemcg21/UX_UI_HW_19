@@ -1,0 +1,242 @@
+body{
+    background-color: #F5F5F5;
+}
+/*header*/
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 4%;
+}
+.header__logo {
+        text-align: left;
+        flex-grow: 1;
+        padding-left: 10%;
+        padding-top: 1%;
+    }
+.nav {
+    text-align: right;
+    flex-grow: 9;
+    padding-right: 10%;
+
+}
+.nav__list {
+    list-style-type: none;
+
+}
+.nav__item {
+    display: inline;
+    font-family: "Ilisarniq", Helvetica, sans-serif;
+    font-size: 18pt;
+    padding-left: 145px;
+}
+/*HOMEPAGE- Hero Section*/
+.homeHero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0% 10% 2% 10%;
+}
+.homeHero__content {
+    margin-right: 7%;
+    flex-shrink: 1;
+}
+.homeHero__image {
+    width: 2fr;
+
+}
+.homeHero__image--profile {
+    height: max-content;
+    width: max-content;
+    
+}
+.contact__icon {
+    font-size: 32pt;
+    padding-right: 64px;
+}
+/*HOMEPAGE - Selected Work*/
+.work {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10% 0 10%;
+}
+.work__item {
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    margin-bottom: 4%;
+    border-radius: 24px;
+}
+.work__item--blue {
+    background-color: #1E526A;
+    color: #F5F5F5;
+}
+.work__item--green {
+    background-color: #255653;
+    color: #F5F5F5;
+}
+.work__item--rose {
+    background-color: #634041;
+    color: #F5F5F5;
+}
+.work__content {
+    margin-right: 10%;
+}
+button {
+    margin-top: 5%;
+    padding: 24px 24px;
+    border: none;
+    font-family: "Mulish", Helvetica, sans-serif;
+    font-size: 18pt;
+    border-radius: 16px;
+
+}
+.button__blue {
+    background-color: #173F52;
+    color: #F5F5F5;
+}
+.button__green {
+    background-color: #1A3D3B;
+    color: #F5F5F5;
+}
+.button__rose {
+    background-color: #4A3031;
+    color: #F5F5F5;
+}
+/*HOMEPAGE - Thank You*/
+.thanks {
+    padding: 0 10% 0 10%;
+    text-align: center;
+}
+.thanks__link {
+    font-family: "Ilisarniq", Helvetica, sans-serif;
+    font-size: 24pt;
+    margin-bottom: 4%;
+}
+/*HOMEPAGE - Footer*/
+.footer {
+    padding: 4% 10% 0 10%;
+    text-align: center;
+    margin-top: 5%;
+}
+.footer__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__icon {
+    font-size: 32pt;
+    padding: 16px;
+}
+/*ABOUT - Hero Section*/
+.secondHero {
+    display: flex;
+    padding: 2% 10% 2% 10%;
+}
+.secondHero__content {
+    background-color: #4A3031;
+    color: #F5F5F5;
+    border-radius: 24px;
+    padding: 40px 224px 80px 80px;
+    overflow: hidden;
+
+}
+.secondHero__image--profile {
+    width: 532px;
+    height: 711px;
+    margin-left: -160px;
+    border-radius: 24px;
+    margin-top: 24px;
+    overflow: visible;
+}
+/*ABOUT - Skills*/
+.skills {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10% 0 10%;
+    max-width: 100%;
+}
+.skills__item {
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    margin-bottom: 4%;
+    border-radius: 24px;
+}
+.skills__item--red {
+    background-color: #8A2A0A;
+    color: #F5F5F5;
+}
+.skills__item--gray {
+    background-color: #3F4B4B;
+    color: #F5F5F5;
+}
+.skills__content {
+    padding-right: 40px;
+}
+.skills__content--list {
+    list-style-type: circle;
+    font-family: "Mulish", Helvetica, sans-serif;
+    font-size: 14pt;
+    line-height: 1.6;
+}
+
+/*Fonts*/
+h1, h2, h3 {
+    font-family: "Ilisarniq", Helvetica, sans-serif;
+}
+h4, p {
+    font-family: "Mulish", Helvetica, sans-serif;
+}
+h1 {
+    font-weight: bold;
+    font-size: 40pt
+}
+h2 {
+    font-weight: bold;
+    font-size: 32pt;
+}
+h3 {
+    font-size: 24pt; 
+}
+h4 {
+    font-size: 24pt; 
+}
+p {
+    font-size: 16pt; 
+    line-height: 1.6;
+}
+@media only screen and (max-width: 1300px) {
+ .homeHero {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+ }
+ .homeHero__image--profile {
+     margin-top: 4%;
+ }
+ .work__item {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+ }
+ .work__image {
+     margin-top: 4%;
+ }
+ .secondHero {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+ }
+ .secondHero__content {
+     padding-right: 80px
+ }
+ .secondHero__image--profile {
+     display: none;
+ }
+ .skills__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+ }
+}
